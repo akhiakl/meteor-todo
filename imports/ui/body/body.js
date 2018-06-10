@@ -8,7 +8,7 @@ import './body.html';
 Template.body.helpers({
     tasks() {
         return Tasks.find({});
-    },
+    }
 });
 
 Template.body.events({
@@ -17,7 +17,9 @@ Template.body.events({
         const text = event.target.text.value; //form value
         Tasks.insert({
             text,
-            createdAt: new Date()
+            createdAt: new Date(),
+            owner: Meteor.userId(),
+            username: Meteor.user().username,
         })
         event.target.text.value = '' //clear input
     }

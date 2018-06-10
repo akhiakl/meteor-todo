@@ -26,7 +26,10 @@
     margin-top: 30px;
 }
 
-
+ body{
+     background: rgba(150, 18, 18, 0.555);
+     height: 100vh
+ }
 @media (max-width: 960px) {
     .container{
         padding: 0;
@@ -42,8 +45,4 @@
     .container h1 {
         text-align: center
     }
- }
- body{
-     background: linear-gradient(rgba(150, 18, 18, 0.555) , rgba(148, 148, 14, 0.719));
-     height: 100vh
  }

@@ -3,9 +3,15 @@
         <div class="content-wrapper">
             <header>
                 <h1>Todo List</h1>
+
+                {{> loginButtons}}
+
+                {{#if currentUser}}
                 <form class="new-task">
                     <input type="text" class="form-control" name="text" placeholder="Type to add new tasks" />
                 </form>
+                {{/if}}
+
             </header>
             <div class="tasks">
                 <ul class="list-group">
