@@ -1,7 +1,7 @@
 <template name="task">
-    <li class="list-group-item">
-      <input type="checkbox" class="toggle-checked" />
-      <span class="pl-5">{{text}}</span>
-      <button class="btn btn-danger float-right">&times;</button>
+    <li class="{{#if checked}}checked{{/if}} list-group-item">
+      <input type="checkbox" checked="{{checked}}" class="checkbox-toggle" />
+      <span class="text pl-5">{{text}}</span>
+      <button class="btn btn-danger delete float-right">&times;</button>
     </li>
 </template>  

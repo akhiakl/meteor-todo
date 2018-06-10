@@ -1,1 +1,6 @@
-@import '../assets/css/bootstrap.min.css'
+@import '../assets/css/bootstrap.min.css';
+
+.checked .text{
+    text-decoration: line-through;
+    color: grey
+}
