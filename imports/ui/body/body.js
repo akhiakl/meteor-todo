@@ -11,4 +11,14 @@ Template.body.helpers({
     },
 });
 
-
+Template.body.events({
+    'submit .new-task'(event) {
+        event.preventDefault(); // preventing form default submit action
+        const text = event.target.text.value; //form value
+        Tasks.insert({
+            text,
+            createdAt: new Date()
+        })
+        event.target.text.value = '' //clear input
+    }
+})
