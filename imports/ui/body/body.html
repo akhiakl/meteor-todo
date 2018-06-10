@@ -1,13 +1,17 @@
 <body>
     <div class="container">
-        <header>
-            <h1>Todo List</h1>
-            <form class="new-task">
-                <input type="text" class="form-control" name="text" placeholder="Type to add new tasks" />
-            </form>
-        </header>
-        <ul class="mt-5 list-group">
-            {{#each tasks}} {{> task}} {{/each}}
-        </ul>
+        <div class="content-wrapper">
+            <header>
+                <h1>Todo List</h1>
+                <form class="new-task">
+                    <input type="text" class="form-control" name="text" placeholder="Type to add new tasks" />
+                </form>
+            </header>
+            <div class="tasks">
+                <ul class="list-group">
+                    {{#each tasks}} {{> task}} {{/each}}
+                </ul>
+            </div>
+        </div>
     </div>
 </body>
