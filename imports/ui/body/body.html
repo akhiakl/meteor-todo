@@ -7,7 +7,7 @@
             </form>
         </header>
         <ul class="mt-5 list-group">
-            {{> task}}
+            {{#each tasks}} {{> task}} {{/each}}
         </ul>
     </div>
 </body>
